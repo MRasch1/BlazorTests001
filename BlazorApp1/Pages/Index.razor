@@ -3,13 +3,18 @@
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
-<h1>@mitNavn.navn</h1>
 
-@code{
+@inject MitNavn MyService
+<h3>Injected String</h3>
+<p>@MyService.navn</p>
+
+@*<h1>@mitNavn.navn</h1>*@
+
+@*@code{
     MitNavn mitNavn = new MitNavn();
     
     
-}
+}*@
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 

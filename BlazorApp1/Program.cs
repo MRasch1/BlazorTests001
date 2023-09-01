@@ -12,6 +12,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<MitNavn>();
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
